@@ -90,6 +90,14 @@ form .btn-gr {
           transform: translateY(-4px);
 }
 
+table thead tr th {
+  background-color: #ccc !important;
+}
+
+table tbody tr td {
+  background-color: #eee !important;
+}
+
 input.search-input {
   padding: 16px 0;
 }
@@ -125,5 +133,73 @@ input.search-input {
 
 .btn-link:hover {
   text-decoration: underline;
+}
+
+.dropbtn {
+  background-color: #ccc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dropbtn img {
+  pointer-events: none;
+}
+
+.dropdown.active > .dropbtn,
+.dropbtn:hover {
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.5rem);
+  background-color: #fff;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.dropdown.active > .dropbtn + .dropdown-menu {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  pointer-events: auto;
+}
+
+.info-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-grid .dropdown-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.25rem;
 }
 /*# sourceMappingURL=style.css.map */
